@@ -89,8 +89,8 @@ body {
   background-color: #ebebeb;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 7fr 5fr 10%;
-      grid-template-columns: 10% 7fr 5fr 10%;
+  -ms-grid-columns: 10% 7.5fr 4.5fr 10%;
+      grid-template-columns: 10% 7.5fr 4.5fr 10%;
   grid-row-gap: 10px;
   -ms-grid-rows: 100px 10fr 1fr;
       grid-template-rows: 100px 10fr 1fr;
@@ -139,9 +139,12 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: navbar-logo;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.navbar__logo-img {
+  width: 60px;
 }
 
 .navbar__links {
@@ -344,7 +347,7 @@ body {
 .menu-toggle span {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   background: #cdcdcd;
@@ -371,7 +374,6 @@ body {
 .menu-toggle__list {
   position: absolute;
   top: 0;
-  bottom: 0;
   width: 300px;
   margin: -14px 0 0 -108px;
   padding: 60px 15px 15px 102px;
@@ -807,6 +809,12 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: footer-logo;
+  width: 60px;
+  height: 60px;
+}
+
+.footer__logo-img {
+  width: 60px;
 }
 
 .footer__contacts {
@@ -855,8 +863,8 @@ body {
   body {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7fr 5fr;
-        grid-template-columns: 7fr 5fr;
+    -ms-grid-columns: 7.5fr 4.5fr;
+        grid-template-columns: 7.5fr 4.5fr;
     grid-row-gap: 10px;
     -ms-grid-rows: 100px 1fr 150px;
         grid-template-rows: 100px 1fr 150px;
@@ -889,6 +897,20 @@ body {
   }
   .navbar .navbar__menu {
     display: none;
+  }
+  .navbar .navbar__logo {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar .navbar__logo-img img {
+    width: 30px;
+  }
+  .navbar__logo {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar__logo-img {
+    width: 30px;
   }
   .menu-toggle {
     display: block;
@@ -931,9 +953,16 @@ body {
         grid-template-rows: 1fr;
         grid-template-areas: "footer-logo contacts copyrights";
   }
+  .footer .footer__logo {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer__logo-img {
+    width: 40px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 560px) {
   body {
     display: -ms-grid;
     display: grid;
