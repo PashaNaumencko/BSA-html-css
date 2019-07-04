@@ -9,6 +9,9 @@
     grid-template-areas: ". navbar-logo . navbar-links ." ". navbar-logo . navbar-menu ."
     &__logo
         grid-area: navbar-logo
+        width: 40px
+        height: 40px
+        border-radius: 50%
     &__links
         grid-area: navbar-links
         display: flex
@@ -139,10 +142,13 @@
     &__list
         position: absolute
         top: 0
+        bottom: 0
         width: 300px
+        // height: 100vh
         margin: -14px 0 0 -108px
-        padding: 41px 15px 15px 102px
-        background: #111f29
+        padding: 60px 15px 15px 102px
+        background: $darkwhite
+        box-shadow: 3px 1px 0 0 rgba(0, 0, 0, 0.3)
         list-style-type: none
         -webkit-font-smoothing: antialiased
         transform-origin: 0% 0%
@@ -150,6 +156,10 @@
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
     &__item
         padding: 10px 0
-        font-size: 22px
+        font-size: 1.7rem
+        border-bottom: 3px solid $dark
     &__link
+        color: $dark
         text-decoration: none
+        line-height: 1.5rem
+    
