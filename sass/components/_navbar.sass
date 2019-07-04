@@ -1,0 +1,155 @@
+.navbar
+    display: grid
+    grid-area: navbar
+    align-items: center
+    background-color: $darkblue
+    width: 100%
+    grid-template-columns: 10% 2fr 5fr 5fr 10%
+    grid-template-rows: 2fr 2fr 
+    grid-template-areas: ". navbar-logo . navbar-links ." ". navbar-logo . navbar-menu ."
+    &__logo
+        grid-area: navbar-logo
+    &__links
+        grid-area: navbar-links
+        display: flex
+        justify-content: center
+        align-items: center
+    &__menu
+        grid-area: navbar-menu
+    &__menu-list
+        display: flex
+        justify-content: center
+        font-size: 1.1rem
+    &__menu-link
+        +bold
+        display: block
+        padding: 10px 30px
+        text-decoration: none
+        font-weight: bold
+        color: #ffffff
+        &:hover
+            background: rgba(0, 0, 0, 0.5)
+            border-radius: 0.25rem
+
+.social-media
+    display: flex
+    justify-content: center
+    &__item
+        margin-right: 20px
+    &__link
+        padding: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.2rem
+        width: 30px
+        height: 30px
+        background: #ffffff
+        text-align: center
+        text-decoration: none
+        border-radius: 50%
+        &:hover
+            opacity: 0.7
+        &_fb
+            color: $facebook
+        &_pint
+            color: $pinterest
+        &_lnk
+            color: $linkedin
+        &_insta
+            color: $instagram
+        &_border-fb
+            width: 40px
+            height: 40px
+            border: 3px solid $facebook
+        &_border-lnk
+            width: 40px
+            height: 40px
+            border: 3px solid $linkedin
+        &_border-pint
+            width: 40px
+            height: 40px
+            border: 3px solid $pinterest 
+        &_border-insta
+            width: 40px
+            height: 40px
+            border: 3px solid $instagram
+
+.search-button
+    display: flex
+    grid-area: navbar-search
+    margin-right: 50px
+    justify-content: center
+    align-items: center
+    font-size: 1.1rem
+    width: 27px
+    height: 27px
+    color: rgba(17, 31, 41, 0.6)
+    background: #ffffff
+    text-align: center
+    box-shadow: none
+    border: 0
+    border-radius: 50%
+    cursor: pointer
+    &_reverse
+        margin: 0
+
+.menu-toggle
+    display: none
+    grid-area: toggle-button
+    position: relative
+    z-index: 1
+    user-select: none
+    &__button
+        display: block
+        width: 40px
+        height: 32px
+        position: absolute
+        top: -7px
+        left: -5px
+        cursor: pointer
+        opacity: 0
+        z-index: 2
+        &:checked ~ span
+            opacity: 1
+            transform: rotate(45deg) translate(-2px, -1px)
+            background: #232323
+        &:checked ~ span:nth-last-child(3)
+            opacity: 0
+            transform: rotate(0deg) scale(0.2, 0.2)
+        &:checked ~ span:nth-last-child(2)    
+            transform: rotate(-45deg) translate(0, -1px)
+        &:checked ~ .menu-toggle__list
+            transform: none
+    span
+        display: block
+        width: 33px
+        height: 4px
+        margin-bottom: 5px
+        position: relative
+        background: #cdcdcd
+        border-radius: 3px
+        z-index: 1
+        transform-origin: 4px 0px
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+        &:first-child
+            transform-origin: 0% 0%
+        &:nth-last-child(2)
+            transform-origin: 0% 100%
+    &__list
+        position: absolute
+        top: 0
+        width: 300px
+        margin: -14px 0 0 -108px
+        padding: 41px 15px 15px 102px
+        background: #111f29
+        list-style-type: none
+        -webkit-font-smoothing: antialiased
+        transform-origin: 0% 0%
+        transform: translate(-100%, 0)
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+    &__item
+        padding: 10px 0
+        font-size: 22px
+    &__link
+        text-decoration: none

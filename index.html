@@ -5,9 +5,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="navbar__logo">
+            <a href="#" class="navbar__logo-link">
+                <img src="" alt="logo">
+            </a>
+        </div>
+        <div class="navbar__links">
+            <button type="button" class="search-button"><i class="fa fa-search"></i></button>
+            <ul class="social-media">
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_fb"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_lnk"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_pint"><i class="fa fa-pinterest"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_insta"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <nav class="menu-toggle">
+            <input type="checkbox" class="menu-toggle__button" />         
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu-toggle__list">
+                <li class="menu-toggle__item">
+                        <a href="#" class="menu-toggle__link">Home</a>
+                </li>
+                <li class="menu-toggle__item">
+                    <a href="#" class="menu-toggle__link">About</a>
+                </li>
+                <li class="menu-toggle__item">
+                    <a href="#" class="menu-toggle__link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar__menu">
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item">
+                    <a href="#" class="navbar__menu-link">Home</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#" class="navbar__menu-link">About</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="#" class="navbar__menu-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
+
+
+    <div class="main-wrapper">
+        <main class="posts">
+            <article class="posts__item">
+                <img src="./img/1.jpg" alt="post-photo" class="posts__photo">
+                <div class="posts__header">
+                    <h5 class="posts__title">Название карточки</h5>
+                    <span class="posts__time">5 days ago</span>
+                </div>
+                <div class="posts__body">
+                    
+                    <p class="posts__desc">Some quick example text to build on the card title 
+                        and make up the bulk of the card's content.</p>
+                    
+                    <div class="posts__rating">
+                        <span>Rating: </span>
+                        <span class="fa fa-star posts__rating_checked"></span>
+                        <span class="fa fa-star posts__rating_checked"></span>
+                        <span class="fa fa-star posts__rating_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+    
+                </div>
+            </article>
+    
+            <article class="posts__item">
+                    <img src="./img/2.jpg" alt="post-photo" class="posts__photo">
+                    <div class="posts__header">
+                        <h5 class="posts__title">Название карточки</h5>
+                        <span class="posts__time">5 days ago</span>
+                    </div>
+                    <div class="posts__body">
+                        
+                        <p class="posts__desc">Some quick example text to build on the card title 
+                            and make up the bulk of the card's content.</p>
+                        
+                        <div class="posts__rating">
+                            <span>Rating: </span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+        
+                    </div>
+            </article>
+                <article class="posts__item">
+                    <img src="./img/3.jpg" alt="post-photo" class="posts__photo">
+                    <div class="posts__header">
+                        <h5 class="posts__title">Название карточки</h5>
+                        <span class="posts__time">5 days ago</span>
+                    </div>
+                    <div class="posts__body">
+                        <p class="posts__desc">Some quick example text to build on the card title 
+                            and make up the bulk of the card's content.
+                        </p>
+                        <div class="posts__rating">
+                            <span>Rating: </span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star posts__rating_checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </article>
+                <article class="posts__item">
+                        <img src="./img/3.jpg" alt="post-photo" class="posts__photo">
+                        <div class="posts__header">
+                            <h5 class="posts__title">Название карточки</h5>
+                            <span class="posts__time">5 days ago</span>
+                        </div>
+                        <div class="posts__body">
+                            <p class="posts__desc">Some quick example text to build on the card title 
+                                and make up the bulk of the card's content.
+                            </p>
+                            <div class="posts__rating">
+                                <span>Rating: </span>
+                                <span class="fa fa-star posts__rating_checked"></span>
+                                <span class="fa fa-star posts__rating_checked"></span>
+                                <span class="fa fa-star posts__rating_checked"></span>
+                                <span class="fa fa-star posts__rating_checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="posts__item">
+                            <img src="./img/3.jpg" alt="post-photo" class="posts__photo">
+                            <div class="posts__header">
+                                <h5 class="posts__title">Название карточки</h5>
+                                <span class="posts__time">5 days ago</span>
+                            </div>
+                            <div class="posts__body">
+                                <p class="posts__desc">Some quick example text to build on the card title 
+                                    and make up the bulk of the card's content.
+                                </p>
+                                <div class="posts__rating">
+                                    <span>Rating: </span>
+                                    <span class="fa fa-star posts__rating_checked"></span>
+                                    <span class="fa fa-star posts__rating_checked"></span>
+                                    <span class="fa fa-star posts__rating_checked"></span>
+                                    <span class="fa fa-star posts__rating_checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </article>
+        </main>
+    
+        <aside class="sidebar">
+            <div class="sidebar__author">
+                <img src="./img/avatar.jpg" alt="avatar" class="sidebar__author-photo">
+                <div class="sidebar__author-info">
+                    <h5 class="sidebar__author-name">Wayne Justice</h5>
+                    <span class="sidebar__author-desc">Dreamer, traveller and blogger</span>
+                </div>
+            </div>
+
+            <ul class="social-media">
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_fb social-media__link_border-fb"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_lnk social-media__link_border-lnk"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_pint social-media__link_border-pint"><i class="fa fa-pinterest"></i></a>
+                </li>
+                <li class="social-media__item">
+                    <a href="#" class="social-media__link social-media__link_insta social-media__link_border-insta"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+            
+            
+            <form action="" method="post" class="sub-form">
+                <h5 class="title">Subscribe</h5>
+                <p class="subtitle">Join our mailing list. We write rarely, but only the best content.</p>
+                <div class="input-box">
+                    <div class="input-box__icon"><i class="fa fa-user"></i></div>
+                    <input type="text" id="name" class="input-box__input">
+                    <label for="name" class="input-box__label">Name</label>      
+                    <span class="input-box__anim-bar"></span>
+                    <span class="input-box__placeholder"></span>
+                </div>
+                <div class="input-box">
+                    <div class="input-box__icon"><i class="fa fa-envelope"></i></div>
+                    <input type="text" id="name" class="input-box__input">
+                    <label for="name" class="input-box__label">Email</label>      
+                    <span class="input-box__anim-line"></span>
+                    <span class="input-box__placeholder"></span>
+                </div>
+                <button type="submit" class="sub-form__submit">Subscribe</button>
+            </form>
+            
+            <form action="" method="get" class="search-form">
+                <h5 class="title">Search</h5>
+                <p class="subtitle">Search everything.</p>
+                <div class="input-box">
+                    <input type="text" id="name" class="input-box__input">
+                    <label for="name" class="input-box__label input-box__label_reverse">Search</label>      
+                    <span class="input-box__anim-line"></span>
+                    <span class="input-box__placeholder"></span>
+                    <button type="submit" class="search-button search-button_reverse"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <div class="sidebar__tags">
+                <h5 class="title">Tags</h5>
+                <ul class="sidebar__cloud">
+                    <li class="sidebar__cloud-item"><a href="#" class="sidebar__cloud-link">performance testing</a></li>
+                    <li class="sidebar__cloud-item"><a href="#" class="sidebar__cloud-link">stress testing</a></li>
+                    <li class="sidebar__cloud-item"><a href="#" class="sidebar__cloud-link">conformance testing</a></li>
+                    <li class="sidebar__cloud-item"><a href="#" class="sidebar__cloud-link">acceptane testing</a></li>
+                    <li class="sidebar__cloud-item"><a href="#" class="sidebar__cloud-link">smoke testing</a></li>
+                </ul>
+            </div>
+            
+
+        </aside>    
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="#" class="navbar__logo-link">
+                <img src="" alt="logo">
+            </a>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__tel">
+                <span>Telephone:</span>
+                <a href="tel:88005553535" class="footer__tel-link">+88005553535</a>
+            </div>
+            <div class="footer__email">
+                <span>E-mail:</span>
+                <a href="mailto:wayne_justice@gmail.com" class="footer__email-link">wayne_justice@gmail.com</a>
+            </div>
+            
+        </div>
+        <span class="footer__copyrights">
+            Copyright(c) 2019
+        </span>
+    </footer>
 </body>
 </html>

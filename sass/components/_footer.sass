@@ -1,0 +1,27 @@
+.footer
+    background: $dark
+    color: #ffffff
+    display: grid
+    grid-area: footer
+    align-items: center
+    justify-items: center
+    width: 100%
+    grid-template-columns: 10% 2fr 5fr 2fr 10%
+    grid-template-rows: 1fr 
+    grid-template-areas: ". footer-logo contacts copyrights ."
+    &__logo
+        grid-area: footer-logo
+    &__contacts
+        grid-area: contacts
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+    &__tel
+        margin-bottom: 10px
+    &__tel-link,
+    &__email-link
+        color: #ffffff
+    &__copyrights
+        grid-area: copyrights
+    

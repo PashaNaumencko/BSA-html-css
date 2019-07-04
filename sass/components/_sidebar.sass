@@ -1,0 +1,146 @@
+.sidebar
+    grid-area: sidebar
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    background-color: #fff
+    padding: 5px 10px
+    border: 1px solid rgba(0,0,0,.125)
+    border-radius: .25rem
+    &__author
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5px
+        margin-bottom: 10px
+    &__author-photo
+        max-width: 100%
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        margin-right: 10px
+    &__author-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__author-name
+        font-weight: bold
+        font-size: 1.2rem
+        margin-bottom: 5px
+        +bold
+    &__author-desc
+        color: #666
+        font-size: 1.1rem
+        +thin
+    &__tags
+        margin-top: 20px
+        text-align: center
+    &__cloud
+        display: inline;
+        list-style-type: none
+        width: 400px
+        max-width: 200px
+    &__cloud-item
+        list-style: none
+        display: inline
+        &:nth-of-type(3n + 1)
+            font-size: 1.25em
+        &:nth-of-type(4n+3)
+            font-size: 1.5em
+        &:nth-of-type(5n - 3)
+            font-size: 1em
+.sub-form
+    margin-top: 20px
+    text-align: center
+    &__submit
+        border: 2px solid #33b5e5
+        background-color: transparent
+        color: #33b5e5
+        border-radius: 10em
+        cursor: pointer
+        padding: 10px 15px
+
+.search-form 
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+.subtitle
+    margin-bottom: 20px
+
+.title
+    +bold
+    font-weight: bold
+    font-size: 1.2rem
+    margin-bottom: 10px
+        
+.input-box
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    position: relative
+    margin-bottom: 20px
+    &__icon
+        font-size: 1.2rem
+        // margin-right: 10px
+        width: 15%
+        padding: 10px 5px
+        margin-right: 10px
+    &__input
+        font-size: 1.1rem
+        // padding: 10px 10px 10px 5px
+        width: 85%
+        border: none
+        border-bottom: 1px solid #757575
+        &:focus
+            outline: none
+        &:focus ~ .input-box__label
+            top: -10px
+            font-size: 0.9rem
+            color: #5264AE
+        &:focus ~ .input-box__anim-line:before,
+        &:focus ~ .input-box__anim-line:after
+            width: 50%
+        &:focus ~ .input-box__anim-line
+            animation: inputPlaceholder 0.3s ease
+        &__anim-line
+            position: relative
+            display: block
+            width: 300px
+            &:before,
+            &:after
+                content: ''
+                height: 2px 
+                width: 0
+                bottom-width: 1px 
+                position: absolute
+                background: #5264AE 
+                transition: 0.2s ease all
+            &:before
+                left: 50%
+            &:after
+                right: 50%
+        &__placeholder
+            position: absolute
+            height: 60%
+            width: 100px 
+            top: 25%
+            left: 0
+            pointer-events: none
+            opacity: 0.5
+    &__label
+        color: #999999 
+        font-size: 1.1rem
+        position: absolute
+        pointer-events: none
+        left: 60px
+        top: 5px
+        transition: 0.2s ease all
+        &_reverse
+            left: 3px
+            top: 0
+    
